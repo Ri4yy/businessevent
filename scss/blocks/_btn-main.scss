@@ -1,0 +1,14 @@
+.btn-main {
+    margin-block-start: auto;
+    
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: $main-color;
+
+    border: 2px solid $main-color;
+    border-radius: 30px;
+    padding: 14px 52px;
+    width: fit-content;
+}

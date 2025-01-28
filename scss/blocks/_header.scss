@@ -7,15 +7,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 29px 0;
+        padding-top: 29px;
         z-index: 2;
 
-        @media(max-width: $breakpoint768) {
-            padding: 20px 0;
-        }
-        @media(max-width: $breakpoint480) {
-            padding: 16px 0;
-        }
+        // @media(max-width: $breakpoint768) {
+        //     padding: 20px 0;
+        // }
+        // @media(max-width: $breakpoint480) {
+        //     padding: 16px 0;
+        // }
     }
 
     &__contacts {

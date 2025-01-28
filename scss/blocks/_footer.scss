@@ -1,0 +1,42 @@
+.footer {
+    background: $main-color;
+    padding: 25px 0 28px;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-family: var(--second-family);
+
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+            color: #f9f9f9;
+        }
+    }
+    &__wrapper {
+        margin-top: 32px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+
+    }
+    &__bottom {
+        margin-top: 56px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 56px;
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        color: #f9f9f9;
+    }
+}

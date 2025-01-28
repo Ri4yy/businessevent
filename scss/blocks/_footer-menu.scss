@@ -1,0 +1,14 @@
+.footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__item {
+        display: flex;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,56 @@
+.why {
+
+    &__title {
+        font-family: var(--second-family);
+
+        font-weight: 600;
+        font-size: 48px;
+        letter-spacing: 0.04em;
+        color: #3a3a3a;
+    }
+    &__wrapper {
+        margin-top: 66px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 28px;
+        counter-reset: why;
+    }
+    &__item {
+        position: relative;
+        padding: 16px 32px;
+        border: 1px solid #3a3a3a;
+        border-radius: 45px;
+
+        min-height: 255px;
+
+        &::after {
+            counter-increment: why;
+            content: counter(why);
+            position: absolute;
+            bottom: 16px;
+            right: 32px;
+
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+            text-align: right;
+            color: #091c5a;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: $main-color;
+        }
+        &-text {
+            margin-top: 28px;
+
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: #131a26;
+        }
+    }
+}

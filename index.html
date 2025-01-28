@@ -9,34 +9,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container-small">
             <div class="header__wrapper">
                 <a href="/" class="logo">
-                    <img src="" alt="">
+                    <img src="./assets/img/icons/logo.svg" alt="">
                 </a>
                 <nav class="menu">
                     <ul class="menu-nav">
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link menu-nav__link--active">Ссылка 1</a>
+                            <a href="" class="menu-nav__link">Программа</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 2</a>
+                            <a href="" class="menu-nav__link">Спикеры</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 3</a>
+                            <a href="" class="menu-nav__link">Стоимость</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 4</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 5</a>
+                            <a href="" class="menu-nav__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__contacts">
-                    <a href="tel:" class="header__phone">8 (999) 999-99-99</a>
-                    <a href="mailto:" class="header__mail">test-test@test.ru</a>
-                </div>
                 <button class="btn-menu">
                     <span></span>
                     <span></span>
@@ -45,6 +38,299 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- Баннер -->
+        <section class="section section-hero">
+            <div class="container-small">
+                <div class="hero">
+                    <div class="hero__left">
+                        <p class="hero__left-subtitle">Стратегия предпринимателя.<br> Корпоративные и личные финансы</p>
+                        <h1 class="hero__left-title">бизнес-завтрак</h1>
+                        <div class="hero__btn-group">
+                            <button class="hero__btn-group__btn hero__btn-group__btn--blue">6 февраля</button>
+                            <button class="hero__btn-group__btn hero__btn-group__btn--red">10:00</button>
+                        </div>
+                        <button class="btn-main">Принять участие</button>
+                    </div>
+                    <div class="hero__right">
+                        <div class="hero__right__img">
+                            <img src="./assets/img/photo/hero-1.png" alt="">
+                        </div>
+                        <div class="hero__right__img">
+                            <img src="./assets/img/photo/hero-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа мероприятия -->
+        <section class="section section-blue section-events">
+            <div class="container container--blue container-events">
+                <div class="container__inner">
+                    <div class="events">
+                        <h2 class="events__title">Программа мероприятия</h2>
+                        <ul class="events-list">
+                            <li class="events-list__item">
+                                <p class="events-list__item-title">«Формула успешного ведения бизнеса»</p>
+                                <span class="events-list__item-name">Андрей Шипунов</span>
+                            </li>
+                            <li class="events-list__item">
+                                <p class="events-list__item-title">«Корпоративные финансы»</p>
+                                <span class="events-list__item-name">Эдуард Мартынов</span>
+                            </li>
+                            <li class="events-list__item">
+                                <p class="events-list__item-title">«Бизнес как система»</p>
+                                <span class="events-list__item-name">Антон Поликарпов</span>
+                            </li>
+                            <li class="events-list__item">
+                                <p class="events-list__item-title">«Личная финансовая стратегия предпринимателя»</p>
+                                <span class="events-list__item-name">Марина Зайцева</span>
+                            </li>
+                            <li class="events-list__item">
+                                <p class="events-list__item-title">«Цифровые решения для качественной аналитики финансов бизнеса»</p>
+                                <span class="events-list__item-name">Наталья Барышева</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кому и зачем -->
+        <section class="section">
+            <div class="container">
+                <div class="container__inner">
+                    <div class="why">
+                        <h2 class="why__title">Кому и зачем</h2>
+                        <div class="why__wrapper">
+                            <div class="why__item">
+                                <p class="why__item-title">Предпринимателям 
+                                    из любых сфер бизнеса</p>
+                                <p class="why__item-text">Обменяться опытом и решить свой запрос</p>
+                            </div>
+                            <div class="why__item">
+                                <p class="why__item-title">Предпринимателям 
+                                    из любых сфер бизнеса</p>
+                                <p class="why__item-text">Обменяться опытом и решить свой запрос</p>
+                            </div>
+                            <div class="why__item">
+                                <p class="why__item-title">Предпринимателям 
+                                    из любых сфер бизнеса</p>
+                                <p class="why__item-text">Обменяться опытом и решить свой запрос</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Спикеры -->
+        <section class="section section-blue">
+            <div class="container container--blue">
+                <div class="container__inner">
+                    <div class="speakers">
+                        <h2 class="speakers__title">Спикеры</h2>
+                        <div class="speakers__wrapper">
+                            <div class="swiper swiper-speaker">
+                                <div class="swiper-button-prev">
+                                    <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3572 2L2.70725 9.649C2.31667 10.0395 2.31667 10.6728 2.70725 11.0633L10.3572 18.7123" stroke="white" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+
+                                <div class="swiper-wrapper swiper-speaker__wrapper">
+                                    <div class="swiper-slide swiper-speaker__slide">
+                                        <div class="card">
+                                            <img src="./assets/img/card/card-1.png" alt="" class="card__img">
+                                            <div class="card__bottom">
+                                                <p class="card__bottom-name">Андрей Шипунов</p>
+                                                <p class="card__bottom-text">Основатель компании «ДВЕРИЯ»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-speaker__slide">
+                                        <div class="card">
+                                            <img src="./assets/img/card/card-2.png" alt="" class="card__img">
+                                            <div class="card__bottom">
+                                                <p class="card__bottom-name">Эдуард Мартынов</p>
+                                                <p class="card__bottom-text">Эксперт по корпоративным финансам</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-speaker__slide">
+                                        <div class="card">
+                                            <img src="./assets/img/card/card-3.png" alt="" class="card__img">
+                                            <div class="card__bottom">
+                                                <p class="card__bottom-name">Антон Поликарпов</p>
+                                                <p class="card__bottom-text">Консультант по системному развитию организации, бизнес-тренер руководителей</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next">
+                                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5 7.62939e-06C8.73039 7.62939e-06 -7.24792e-05 8.72942 -7.24792e-05 19.4977C-7.24792e-05 30.266 8.73039 38.9954 19.5 38.9954C30.2695 38.9954 39 30.266 39 19.4977C39 8.72942 30.2695 7.62939e-06 19.5 7.62939e-06Z" fill="white" fill-opacity="0.46" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Стоимость участия -->
+        <section class="section">
+            <div class="container">
+                <div class="container__inner">
+                    <div class="price">
+                        <h2 class="price__title">Стоимость участия</h2>
+                        <div class="price__wrapper">
+                            <div class="price__item">
+                                <p class="price__item-title">Для членов «ОПОРЫ РОССИИ»</p>
+                                <p class="price__item-value">1000 РУБ</p>
+                                <button class="price__item-btn">Оплатить</button>
+                            </div>
+                            <div class="price__item">
+                                <p class="price__item-title">Для гостей</p>
+                                <p class="price__item-value">1500 РУБ</p>
+                                <button class="price__item-btn">Оплатить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Место проведения -->
+        <section class="section section-blue">
+            <div class="container container--blue container--last">
+                <div class="container__inner">
+                    <div class="place">
+                        <h2 class="place__title">Место проведения</h2>
+                        <div class="place__inner">
+                            <p class="place__subtitle">Ресторан “Saga”</p>
+                            <div class="place__address">
+                                <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 26C10.5 26 0 14.131 0 9.1C-2.05469e-08 7.90497 0.271591 6.72164 0.799265 5.61758C1.32694 4.51352 2.10036 3.51034 3.07538 2.66533C4.05039 1.82032 5.20791 1.15001 6.48182 0.692696C7.75574 0.235378 9.12112 0 10.5 0C11.8789 0 13.2443 0.235378 14.5182 0.692696C15.7921 1.15001 16.9496 1.82032 17.9246 2.66533C18.8996 3.51034 19.6731 4.51352 20.2007 5.61758C20.7284 6.72164 21 7.90497 21 9.1C21 14.131 10.5 26 10.5 26ZM10.5 11.7C11.2956 11.7 12.0587 11.4261 12.6213 10.9385C13.1839 10.4509 13.5 9.78956 13.5 9.1C13.5 8.41044 13.1839 7.74912 12.6213 7.26152C12.0587 6.77393 11.2956 6.5 10.5 6.5C9.70435 6.5 8.94129 6.77393 8.37868 7.26152C7.81607 7.74912 7.5 8.41044 7.5 9.1C7.5 9.78956 7.81607 10.4509 8.37868 10.9385C8.94129 11.4261 9.70435 11.7 10.5 11.7Z" fill="white" />
+                                </svg>
+                                Чебоксары, Калининский район, площадь Речников, 5
+                            </div>
+                            <div class="place__wrapper">
+                                <div class="swiper swiper-place">
+                                    <div class="swiper-wrapper swiper-place__wrapper">
+                                        <div class="swiper-slide swiper-place__slide">
+                                            <img src="./assets/img/place/place-1.png" class="swiper-place__slide-img" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-place__slide">
+                                            <img src="./assets/img/place/place-2.png" class="swiper-place__slide-img" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-place__slide">
+                                            <img src="./assets/img/place/place-3.png" class="swiper-place__slide-img" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-place__slide">
+                                            <img src="./assets/img/place/place-3.png" class="swiper-place__slide-img" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-place-btn swiper-place-btn--prev">
+                                        <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.3572 2L2.70725 9.649C2.31667 10.0395 2.31667 10.6728 2.70725 11.0633L10.3572 18.7123" stroke-width="3" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-place-btn swiper-place-btn--next">
+                                        <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.64282 18.9956L9.29275 11.3466C9.68333 10.9561 9.68333 10.3228 9.29275 9.93231L1.64282 2.28331" stroke-width="3" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="place__text">Идеальное место для тех, кто ценит изысканную кухню и уютную атмосферу.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section">
+            <div class="container-small">
+                <div class="contacts">
+                    <div class="contacts__top">
+                        <h2 class="contacts__top-title">Успейте записаться!</h2>
+                        <p class="contacts__top-subtitle">Количество мест ограничено</p>
+                        <button class="btn-main">Принять участие</button>
+                    </div>
+                    <div class="contacts__bottom">
+                        <h2 class="contacts__bottom-title">Контакты</h2>
+                        <div class="contacts__wrapper">
+                            <div class="contacts__item">
+                                <svg width="47" height="50" class="contacts__item-icon" viewBox="0 0 47 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.9987 36.4398V43.3647C45.0011 44.0076 44.8778 44.6439 44.6365 45.2329C44.3953 45.8219 44.0415 46.3507 43.5978 46.7853C43.1541 47.2199 42.6303 47.5507 42.0599 47.7567C41.4895 47.9626 40.8851 48.0391 40.2854 47.9813C33.6325 47.2095 27.2419 44.7823 21.6271 40.8948C16.4033 37.3508 11.9744 32.6223 8.65497 27.0451C5.0011 21.0233 2.72722 14.1672 2.01755 7.03228C1.96352 6.39397 2.03457 5.75063 2.22619 5.14324C2.4178 4.53585 2.72577 3.97771 3.13049 3.50435C3.53521 3.031 4.02781 2.6528 4.57694 2.39384C5.12606 2.13488 5.71968 2.00083 6.31998 2.00022H12.8061C13.8553 1.9892 14.8725 2.38589 15.6681 3.11635C16.4636 3.84682 16.9833 4.86122 17.1301 5.97047C17.4039 8.18658 17.9116 10.3625 18.6435 12.4568C18.9344 13.2829 18.9974 14.1808 18.825 15.0441C18.6525 15.9073 18.2519 16.6996 17.6706 17.3272L14.9249 20.2588C18.0026 26.0377 22.4843 30.8225 27.897 34.1085L30.6428 31.1769C31.2306 30.5563 31.9728 30.1286 32.7813 29.9445C33.5898 29.7604 34.4308 29.8277 35.2047 30.1382C37.1662 30.9197 39.2043 31.4617 41.28 31.754C42.3302 31.9122 43.2894 32.477 43.975 33.341C44.6607 34.2049 45.025 35.3078 44.9987 36.4398Z" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p class="contacts__item-text">Номер телефона</p>
+                                <a href="tel:+79063824345" class="contacts__item-link">+7 906 382 43 45</a>
+                            </div>
+                            <div class="contacts__item">
+                                <svg width="68" height="44" class="contacts__item-icon" viewBox="0 0 68 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M68 7.33333C68 5.38841 67.1045 3.52315 65.5104 2.14788C63.9163 0.772616 61.7543 0 59.5 0H8.5C6.24566 0 4.08365 0.772616 2.48959 2.14788C0.895531 3.52315 0 5.38841 0 7.33333V36.6667C0 38.6116 0.895531 40.4768 2.48959 41.8521C4.08365 43.2274 6.24566 44 8.5 44H59.5C61.7543 44 63.9163 43.2274 65.5104 41.8521C67.1045 40.4768 68 38.6116 68 36.6667V7.33333ZM59.5 3.66667C60.6272 3.66667 61.7082 4.05297 62.5052 4.74061C63.3022 5.42824 63.75 6.36087 63.75 7.33333V8.129L34 23.529L4.25 8.129V7.33333C4.25 6.36087 4.69777 5.42824 5.4948 4.74061C6.29182 4.05297 7.37283 3.66667 8.5 3.66667H59.5ZM4.25 12.4043L24.259 22.7627L4.25 33.385V12.4043ZM4.3945 37.6163L28.3645 24.8893L34 27.8043L39.6355 24.8893L63.6055 37.6127C63.364 38.3929 62.8307 39.0826 62.0883 39.5745C61.3459 40.0665 60.4361 40.3332 59.5 40.3333H8.5C7.56448 40.3334 6.65505 40.0672 5.91276 39.576C5.17047 39.0847 4.6368 38.3959 4.3945 37.6163ZM63.75 33.385L43.741 22.7627L63.75 12.4043V33.385Z" />
+                                </svg>
+                                <p class="contacts__item-text">Электронная почта</p>
+                                <a href="mailto:oporaru21@gmail.com" class="contacts__item-link">oporaru21@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container-small">
+            <div class="footer__top">
+                <p class="footer__top-title">Следите за анонсами</p>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__item-link">
+                            <img src="./assets/img/icons/tg.svg" class="social-list__item-icon" alt="">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__item-link">
+                            <img src="./assets/img/icons/vk.svg" class="social-list__item-icon" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__wrapper">
+                <a href="" class="footer__logo"><img src="./assets/img/icons/light-logo.svg" alt=""></a>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">Программа</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">Спикеры</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">Стоимость</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Общественная организация малого и среднего предпринимательства «ОПОРА РОСCИИ» Чувашское региональное отделение.</p>
+                <a href="" class="footer__dev">
+                    <img src="./assets/img/icons/dev.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/libs/jquery.min.js"></script>
     <script src="./assets/libs/swiper-bundle.min.js"></script>
