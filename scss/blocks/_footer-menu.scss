@@ -17,7 +17,9 @@
         display: flex;
     }
     &__link {
-        font-weight: 600;
+        font-family: $font-family-unbounded;
+
+        font-weight: 400;
         font-size: 16px;
         color: #091c5a;
 
