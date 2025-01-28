@@ -1,11 +1,21 @@
 .hero {
     margin-top: 72px;
-    
-    display: flex;
-    justify-content: space-between;
+    container: hero / inline-size;
 
+    @media(max-width: $breakpoint1024) {
+        margin-top: 36px;
+    }
+    @media(max-width: $breakpoint480) {
+        margin-top: 28px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     &__left {
-        width: 65%;
+        max-width: 860px;
 
         display: flex;
         flex-direction: column;
@@ -14,6 +24,10 @@
             font-weight: 600;
             font-size: 32px;
             color: #3a3a3a;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 20px;
+            }
         }
         &-title {
             margin-top: 36px;
@@ -21,13 +35,34 @@
             font-size: 96px;
             letter-spacing: 0.04em;
             color: #3a3a3a;
+
+            @media(max-width: $breakpoint1024) {
+                margin-top: 20px;
+                font-size: 72px;
+            }
+            @media(max-width: $breakpoint768) {
+                margin-top: 14px;
+                font-size: 40px;
+            }
+            @media(max-width: $breakpoint375) {
+                font-size: 32px;
+            }
         }
     }
     &__btn-group {
         margin-top: 48px;
+        margin-bottom: 20px;
 
         display: flex;
         gap: 27px;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 36px;
+        }
+        @media(max-width: $breakpoint768) {
+            margin-top: 10px;
+            gap: 16px;
+        }
 
         &__btn {
             width: 300px;
@@ -38,6 +73,16 @@
             font-size: 32px;
             text-align: center;
             color: #fff;
+
+            @media(max-width: $breakpoint768) {
+                width: 172px;
+                padding: 6px;
+                font-size: 16px;
+            }
+            @media(max-width: $breakpoint375) {
+                width: fit-content;
+                padding: 6px 20px;
+            }
 
             &--blue {
                 background: $main-color;
@@ -53,13 +98,41 @@
         flex-direction: column;
         gap: 20px;
 
-        &__img {
+        @media(max-width: $breakpoint768) {
+            margin-bottom: 38px !important;
+        }
+        @media(max-width: $breakpoint480) {
+            flex-direction: column !important;
+        }
+
+        &-img {
+            width: fit-content;
+
+            &:nth-of-type(2) {
+                @media(max-width: $breakpoint480) {
+                    margin-left: auto;
+                }
+            }
 
             & img {
                 border-radius: 30px;
                 object-fit: cover;
                 aspect-ratio: 16/9;
+
+                @media(max-width: $breakpoint480) {
+                    width: 234px;
+                }
             }
         }
+    }
+}
+
+@container hero (max-width: 1272px) {
+    .hero__wrapper {
+        flex-direction: column;
+    }
+    .hero__right {
+        margin: 20px 0;
+        flex-direction: row;
     }
 }

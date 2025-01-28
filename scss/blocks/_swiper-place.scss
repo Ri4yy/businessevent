@@ -1,6 +1,13 @@
 .swiper-place {
     position: relative;
 
+    &__slide {
+
+        &-img {
+            width: 100%;
+        }
+    }
+
     &-btn {
         position: absolute;
         top: 50%;

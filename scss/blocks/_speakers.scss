@@ -7,6 +7,13 @@
         font-size: 48px;
         letter-spacing: 0.04em;
         color: #fff;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 24px;
+        }
     }
     &__wrapper {
         display: flex;
@@ -24,5 +31,9 @@
         height: 40px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.46);
+
+        @media(max-width: 600px) {
+            display: none;
+        }
     }
 }

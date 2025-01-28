@@ -6,35 +6,15 @@ const swiperPlace = new Swiper('.swiper-place', {
     breakpoints: {
         320: {
             allowTouchMove: true,
-            slidesPerView: 1,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
+            slidesPerView: 1
         },
-        480: {
+        600: {
             allowTouchMove: true,
-            slidesPerView: 2,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
+            slidesPerView: 2
         },
-        768: {
+        850: {
             allowTouchMove: true,
-            slidesPerView: 3,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
-        },
-        1024: {
-            allowTouchMove: true,
-            slidesPerView: 2,
-            grid: {
-                rows: 2,
-                fill: "row",
-            }
+            slidesPerView: 3
         },
         1280: {
             allowTouchMove: true,
@@ -57,37 +37,13 @@ const swiperSpeaker = new Swiper('.swiper-speaker', {
     breakpoints: {
         320: {
             allowTouchMove: true,
-            slidesPerView: 1,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
+            slidesPerView: 1
         },
-        480: {
+        850: {
             allowTouchMove: true,
-            slidesPerView: 2,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
+            slidesPerView: 2
         },
-        768: {
-            allowTouchMove: true,
-            slidesPerView: 3,
-            grid: {
-                rows: 1,
-                fill: "row",
-            }
-        },
-        1024: {
-            allowTouchMove: true,
-            slidesPerView: 2,
-            grid: {
-                rows: 2,
-                fill: "row",
-            }
-        },
-        1280: {
+        1480: {
             allowTouchMove: true,
             slidesPerView: 3,
         },

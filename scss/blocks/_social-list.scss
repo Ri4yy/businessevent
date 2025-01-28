@@ -5,6 +5,21 @@
     align-items: center;
     gap: 18px;
 
+    &--desktop {
+
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
+    }
+    &--mobile {
+        display: none;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 0;
+            display: flex;
+        }
+    }
+
     &__item {
         display: flex;
     }

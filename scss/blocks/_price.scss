@@ -7,6 +7,13 @@
         font-size: 48px;
         letter-spacing: 0.04em;
         color: #3a3a3a;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 24px;
+        }
     }
     &__wrapper {
         margin-top: 66px;
@@ -14,6 +21,16 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 48px;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 40px;
+            gap: 20px;
+        }
+        @media(max-width: $breakpoint768) {
+            margin-top: 20px;
+
+            grid-template-columns: none;
+        }
     }
     &__item {
         padding: 40px;
@@ -26,12 +43,21 @@
         border-radius: 45px;
         background: rgba(255, 255, 255, 0.08);
 
+        @media(max-width: $breakpoint768) {
+            padding: 26px;
+            border-radius: 30px;
+        }
+
         &-title {
             font-weight: 600;
             font-size: 32px;
             line-height: 130%;
             text-align: center;
             color: #3a3a3a;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 20px;
+            }
         }
         &-value {
             margin: 24px 0 26px 0;
@@ -40,8 +66,15 @@
             line-height: 130%;
             text-align: center;
             color: #3751a8;
+
+            @media(max-width: $breakpoint768) {
+                margin: 14px;
+                font-size: 36px;
+            }
         }
         &-btn {
+            margin-block-start: auto;
+            
             padding: 16px;
             max-width: 330px;
             width: 100%;
@@ -52,6 +85,12 @@
             font-size: 24px;
             text-align: center;
             color: #fff;
+
+            @media(max-width: $breakpoint768) {
+                max-width: 220px;
+                padding: 6px;
+                font-size: 20px;
+            }
         }
     }
 }

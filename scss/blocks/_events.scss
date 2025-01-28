@@ -1,4 +1,5 @@
 .events {
+    position: relative;
 
     &__title {
         // font-family: var(--second-family);
@@ -7,5 +8,41 @@
         font-size: 48px;
         letter-spacing: 0.04em;
         color: #fff;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 24px;
+        }
+    }
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        aspect-ratio: 408 / 667;
+        width: 408px;
+        height: 667px;
+        background-image: url(../assets/img/bg/events-bg.png);
+        background-position: 0 0;
+        background-repeat: no-repeat; 
+        background-size: contain;
+
+        @media(max-width: $breakpoint1024) {
+            top: 300px;
+            width: 300px;
+            height: auto;
+        }
+        @media(max-width: $breakpoint768) {
+            top: 250px;
+            width: 200px;
+            height: auto;
+        }
+
+        &:hover {
+            background-image: url(../assets/img/bg/events-bg-active.png);
+        }
     }
 }
