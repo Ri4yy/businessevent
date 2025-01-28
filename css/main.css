@@ -474,6 +474,7 @@ h2 {
 }
 
 .hero {
+  margin-top: 72px;
   display: flex;
   justify-content: space-between;
 }
