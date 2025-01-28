@@ -95,7 +95,7 @@ const swiperSpeaker = new Swiper('.swiper-speaker', {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-place-btn--next',
-      prevEl: '.swiper-place-btn--prev',
+      nextEl: '.speakers__btn--next',
+      prevEl: '.speakers__btn--prev',
     },
 });

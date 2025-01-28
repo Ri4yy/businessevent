@@ -641,6 +641,21 @@ h2 {
   letter-spacing: 0.04em;
   color: #fff;
 }
+.speakers__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.speakers__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.46);
+}
 
 .price__title {
   font-family: var(--second-family);
@@ -908,6 +923,29 @@ h2 {
 }
 .social-list__item {
   display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card__bottom {
+  margin-top: -48px;
+}
+.card__bottom-name {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #f9f9f9;
+}
+.card__bottom-text {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #f9f9f9;
 }
 
 .custom-checkbox {
