@@ -20,5 +20,11 @@
         @media(max-width: $breakpoint768) {
             padding: 60px 20px;
         }
+        @media(max-width: $breakpoint480) {
+            padding: 66px 44px 28px;
+        }
+        @media(max-width: $breakpoint375) {
+            padding: 66px 24px 28px;
+        }
     }
 }

@@ -2,7 +2,7 @@
     padding: 200px 0 110px;
     
     @media(max-width: $breakpoint1024) {
-        padding: 50px 0;
+        padding: 66px 0 25px;
     }
 
     &__bg {
@@ -20,11 +20,9 @@
         background-size: contain;
 
         @media(max-width: $breakpoint1024) {
-            display: none;
+            width: 250px;
         }
         @media(max-width: $breakpoint768) {
-            display: block;
-            background-image: url(../assets/img/bg/contacts-bg-small.png);
             top: 200px;
 
             width: 98px;
@@ -56,7 +54,7 @@
             color: #fff;
 
             @media(max-width: $breakpoint1024) {
-                color: $main-color;
+                color: #fff;
             }
             @media(max-width: $breakpoint768) {
                 font-size: 24px;
@@ -72,7 +70,7 @@
 
             @media(max-width: $breakpoint1024) {
                 margin: 18px 0 30px;
-                color: #3a3a3a;
+                color: #fff;
             }
             @media(max-width: $breakpoint768) {
                 margin: 12px 0 26px;
@@ -99,7 +97,7 @@
             color: #fff;
 
             @media(max-width: $breakpoint1024) {
-                color: #3a3a3a;
+                color: #fff;
             }
             @media(max-width: $breakpoint768) {
                 font-size: 24px;

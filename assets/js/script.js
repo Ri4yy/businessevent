@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         btnMenu.classList.toggle('btn-menu--open')
     })
+    $('.menu-nav__link').click(() => {
+        menu.classList.remove('menu--open')
+        html.classList.remove('no-scroll')
+
+        btnMenu.classList.remove('btn-menu--open')
+    })
 
     function resize() {
         let width = window.innerWidth;

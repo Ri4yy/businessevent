@@ -22,7 +22,7 @@
         color: #091c5a;
 
         @media(max-width: $breakpoint1024) {
-            color: #fff;
+            color: $main-color;
         }
     }
 }

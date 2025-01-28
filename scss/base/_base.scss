@@ -47,17 +47,24 @@ h3 {
             &::after {
                 content: '';
                 position: absolute;
-                bottom: -100px;
+                bottom: -40px;
                 left: 0;
                 background: #fff;
     
-                height: 100px;
+                height: 40px;
                 width: 100%;
                 border-bottom-left-radius: 38px;
                 border-bottom-right-radius: 38px;
 
+                @media(max-width: $container-width) {
+                    width: calc(100% - 48px);
+                    left: 24px;
+                }
                 @media(max-width: $breakpoint1024) {
-                    display: none;
+                    width: calc(100% - 32px);
+                    left: 16px;
+                    border-bottom-left-radius: 25px;
+                    border-bottom-right-radius: 25px;
                 }
             }
         }
@@ -93,7 +100,7 @@ h3 {
             @media(max-width: $breakpoint1024) {
                 width: calc(100% - 32px);
                 left: 16px;
-                
+
                 height: 40px;
                 top: -40px;
                 border-top-left-radius: 25px;
