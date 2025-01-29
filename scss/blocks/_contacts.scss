@@ -1,5 +1,5 @@
 .contacts {
-    padding: 200px 0 110px;
+    padding: 110px 0 80px;
     
     @media(max-width: $breakpoint1024) {
         padding: 66px 0 25px;
@@ -80,7 +80,7 @@
         }
     }
     &__bottom {
-        margin-top: 100px;
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;

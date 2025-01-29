@@ -20,11 +20,14 @@
         font-family: $font-family-unbounded;
 
         font-weight: 400;
-        font-size: 16px;
+        font-size: 20px;
         color: #091c5a;
 
         @media(max-width: $breakpoint1024) {
             color: $main-color;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
         }
     }
 }

@@ -1,5 +1,9 @@
 .footer {
-    padding: 25px 0 28px;
+    padding: 40px 0 20px;
+
+    @media(max-width: $breakpoint768) {
+        padding: 24px 0;
+    }
 
     &__logo {
         @media(max-width: $breakpoint768) {
@@ -28,7 +32,7 @@
         }
     }
     &__wrapper {
-        margin-top: 32px;
+        margin-top: 20px;
 
         display: flex;
         justify-content: space-between;
@@ -58,6 +62,7 @@
         gap: 56px;
 
         @media(max-width: $breakpoint768) {
+            margin-top: 30px;
             flex-direction: column;
             gap: 18px;
         }

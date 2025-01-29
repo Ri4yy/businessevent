@@ -20,7 +20,7 @@
     &__bg {
         position: absolute;
         right: 0;
-        top: 50%;
+        top: calc(50% + 100px);
         transform: translateY(-50%);
 
         aspect-ratio: 408 / 667;
@@ -37,7 +37,7 @@
             height: auto;
         }
         @media(max-width: $breakpoint768) {
-            top: 250px;
+            top: 230px;
             width: 200px;
             height: auto;
         }
