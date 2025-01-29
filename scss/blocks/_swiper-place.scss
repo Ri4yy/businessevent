@@ -17,7 +17,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.46);
+        background: #3751a8;
 
         display: flex;
         justify-content: center;
@@ -35,7 +35,11 @@
         }
 
         &.swiper-button-disabled {
-            opacity: 0;
+            background: rgba(55, 81, 168, 0.67);
+
+            & svg {
+                opacity: .7;
+            }
         }
     }
 }

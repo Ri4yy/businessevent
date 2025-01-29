@@ -925,10 +925,8 @@ h2 {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.46);
 }
-@media (max-width: 600px) {
-  .speakers__btn {
-    display: none;
-  }
+.speakers__btn.swiper-button-disabled {
+  background: rgba(55, 81, 168, 0.32);
 }
 
 .price__title {
@@ -1135,7 +1133,7 @@ h2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.46);
+  background: #3751a8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1150,7 +1148,10 @@ h2 {
   right: 0;
 }
 .swiper-place-btn.swiper-button-disabled {
-  opacity: 0;
+  background: rgba(55, 81, 168, 0.67);
+}
+.swiper-place-btn.swiper-button-disabled svg {
+  opacity: 0.7;
 }
 
 .contacts {
@@ -1711,6 +1712,7 @@ h2 {
   font-size: 14px;
   line-height: 130%;
   color: #3a3a3a;
+  text-decoration: underline;
 }
 @media (max-width: 480px) {
   .modal-block__bottom-text {

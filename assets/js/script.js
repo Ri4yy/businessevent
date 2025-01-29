@@ -34,17 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let priceContainer = $('#price-container');
 
-    $('.price__item-btn').click((e) => {
+    $('.open-modal').click((e) => {
         let price = $(e.target).data('price');
-
-        priceContainer.html(price);
-
-        if(price == 1000) {
-            $('#opora-russia').prop('checked', true);
-            $('#guest').prop('checked', false);
-        } else {
-            $('#opora-russia').prop('checked', false);
-            $('#guest').prop('checked', true);
+        
+        if(price != undefined) {
+            priceContainer.html(price);
+    
+            if(price == 1000) {
+                $('#opora-russia').prop('checked', true);
+                $('#guest').prop('checked', false);
+            } else {
+                $('#opora-russia').prop('checked', false);
+                $('#guest').prop('checked', true);
+            }
         }
         
         showModal($('.modal-pay'));

@@ -32,8 +32,9 @@
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.46);
 
-        @media(max-width: 600px) {
-            display: none;
+
+        &.swiper-button-disabled {
+            background: rgba(55, 81, 168, 0.32);
         }
     }
 }
