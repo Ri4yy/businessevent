@@ -121,6 +121,7 @@
         @media(max-width: $breakpoint768) {
             margin-top: 26px;
             gap: 18px;
+            grid-template-columns: unset;
         }
     }
     &__item {
@@ -165,6 +166,10 @@
             font-size: 24px;
             line-height: 130%;
             color: #3751a8;
+
+            @media(max-width: $breakpoint375) {
+                font-size: 20px;
+            }
         }
     }
 }

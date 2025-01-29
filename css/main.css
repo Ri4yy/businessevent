@@ -672,6 +672,7 @@ h2 {
 @media (max-width: 1024px) {
   .events__title {
     font-size: 32px;
+    padding-left: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -809,6 +810,7 @@ h2 {
 @media (max-width: 1024px) {
   .why__title {
     font-size: 32px;
+    padding-left: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -903,6 +905,7 @@ h2 {
 @media (max-width: 1024px) {
   .speakers__title {
     font-size: 32px;
+    padding-left: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -939,6 +942,7 @@ h2 {
 @media (max-width: 1024px) {
   .price__title {
     font-size: 32px;
+    padding-left: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -1049,6 +1053,7 @@ h2 {
 @media (max-width: 1024px) {
   .place__title {
     font-size: 32px;
+    padding-left: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -1288,6 +1293,7 @@ h2 {
   .contacts__wrapper {
     margin-top: 26px;
     gap: 18px;
+    grid-template-columns: unset;
   }
 }
 .contacts__item {
@@ -1325,6 +1331,11 @@ h2 {
   font-size: 24px;
   line-height: 130%;
   color: #3751a8;
+}
+@media (max-width: 375px) {
+  .contacts__item-link {
+    font-size: 20px;
+  }
 }
 
 .footer {
