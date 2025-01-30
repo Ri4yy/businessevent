@@ -46,6 +46,14 @@
             min-height: 210px;
         }
 
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+
+            &::after {
+                color: #fd4545;
+            }
+        }
+
         &::after {
             counter-increment: why;
             content: '0'counter(why);
@@ -58,6 +66,7 @@
             line-height: 130%;
             text-align: right;
             color: #091c5a;
+            transition: all .3s;
 
             @media(max-width: $breakpoint768) {
                 font-size: 36px;
